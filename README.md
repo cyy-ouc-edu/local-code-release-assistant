@@ -74,6 +74,15 @@ python scripts/collect_git_context.py --repo C:\path\to\your-repository
 - [API 审查报告](examples/api_report.md)
 - [配置发布报告](examples/config_report.md)
 
+## 无现成项目时快速演示
+
+```powershell
+python scripts/create_demo_repo.py --output demo-repository
+python scripts/generate_report.py --repo demo-repository --mode review --output demo_report.md
+```
+
+完整录屏步骤和旁白见 [DEMO.md](DEMO.md)。
+
 ## 作为 Skill 使用
 
 将整个目录放到支持 Agent Skills 标准的 Skills 目录中。之后可以直接对 Agent 说：
