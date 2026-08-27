@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+dist/
+pr_report.md
+release_report.md
+release_notes.md
+review_report.md

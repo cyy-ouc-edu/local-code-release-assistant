@@ -1,0 +1,19 @@
+diff --git a/src/components/SaveButton.tsx b/src/components/SaveButton.tsx
+index c4a7396..8f719ef 100644
+--- a/src/components/SaveButton.tsx
++++ b/src/components/SaveButton.tsx
+@@ -1,7 +1,12 @@
+ type SaveButtonProps = {
+   onSave: () => void;
++  isSaving?: boolean;
+ };
+ 
+-export function SaveButton({ onSave }: SaveButtonProps) {
+-  return <button onClick={onSave}>Save</button>;
++export function SaveButton({ onSave, isSaving = false }: SaveButtonProps) {
++  return (
++    <button disabled={isSaving} onClick={onSave}>
++      {isSaving ? "Saving..." : "Save"}
++    </button>
++  );
+ }

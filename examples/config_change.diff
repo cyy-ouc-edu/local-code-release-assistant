@@ -1,0 +1,11 @@
+diff --git a/config/production.yaml b/config/production.yaml
+index 4200c74..e129cad 100644
+--- a/config/production.yaml
++++ b/config/production.yaml
+@@ -1,4 +1,4 @@
+ service:
+-  request_timeout_seconds: 15
++  request_timeout_seconds: 30
+ features:
+-  fast_checkout: false
++  fast_checkout: true

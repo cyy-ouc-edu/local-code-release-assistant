@@ -1,0 +1,9 @@
+diff --git a/src/routes/orders.py b/src/routes/orders.py
+index a1da616..73d075f 100644
+--- a/src/routes/orders.py
++++ b/src/routes/orders.py
+@@ -1,2 +1,4 @@
+ def list_orders(limit: int) -> dict:
++    if not 1 <= limit <= 100:
++        raise ValueError("limit must be between 1 and 100")
+     return {"items": [], "limit": limit}

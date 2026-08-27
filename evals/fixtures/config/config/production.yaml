@@ -1,0 +1,4 @@
+service:
+  request_timeout_seconds: 30
+features:
+  fast_checkout: true
